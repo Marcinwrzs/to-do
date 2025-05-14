@@ -1,0 +1,29 @@
+.task-card {
+  input.form-check-input {
+    margin-top: 0.3rem;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.6em;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .fw-semibold {
+    font-weight: 600;
+  }
+
+  button {
+    font-size: 0.85rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

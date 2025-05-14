@@ -1,0 +1,35 @@
+<div class="d-flex flex-wrap gap-3 mb-4 align-items-end">
+  <div>
+    <label class="form-label">Nazwa</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      [(ngModel)]="name"
+      (ngModelChange)="emitFilters()"
+      placeholder="Szukaj po nazwie"
+    />
+  </div>
+
+  <div>
+    <label class="form-label">Data</label>
+    <input
+      type="date"
+      class="form-control form-control-sm"
+      [(ngModel)]="date"
+      (ngModelChange)="emitFilters()"
+    />
+  </div>
+
+  <div>
+    <label class="form-label">Status</label>
+    <select
+      class="form-select form-select-sm"
+      [(ngModel)]="status"
+      (ngModelChange)="emitFilters()"
+    >
+      <option value="">Wszystkie</option>
+      <option value="Pending">Pending</option>
+      <option value="Completed">Completed</option>
+    </select>
+  </div>
+</div>
